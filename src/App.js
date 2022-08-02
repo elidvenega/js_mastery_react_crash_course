@@ -6,7 +6,7 @@ import SearchIcon from "./search.svg";
 
 const API_URL = "http://www.omdbapi.com?apikey=d49d8266";
 
-const App = () => {
+function App() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -14,15 +14,15 @@ const App = () => {
     searchMovies("");
   }, []);
 
-  const searchMovies = async (title) => {
+  async function searchMovies(title) {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
 
     setMovies(data.Search);
-  };
+  }
   return (
     <div className="app">
-      <h1>MovieLand</h1>
+      <h1>Movie Search</h1>
 
       <div className="search">
         <input
@@ -45,11 +45,15 @@ const App = () => {
         </div>
       ) : (
         <div className="empty">
-          <h2>Search Movies</h2>
+          <h2>No movies found</h2>
         </div>
+      ) ? (
+        <h2 className="begin">Begin Searching</h2>
+      ) : (
+        <h2 className="begin">Something not working</h2>
       )}
     </div>
   );
-};
+}
 
 export default App;
