@@ -4,6 +4,7 @@ import MovieCard from "./MovieCard";
 import "./App.css";
 import SearchIcon from "./search.svg";
 
+// API been used 
 const API_URL = "https://www.omdbapi.com?apikey=d49d8266";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     searchMovies("Your Name");
   }, []);
 
+  // Function been use to fetch data
   async function searchMovies(title) {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
