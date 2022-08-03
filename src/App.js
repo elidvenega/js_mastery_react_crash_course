@@ -11,7 +11,7 @@ function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    searchMovies("");
+    searchMovies("Your Name");
   }, []);
 
   async function searchMovies(title) {
