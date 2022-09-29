@@ -11,7 +11,7 @@ export default function API() {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    searchMovies("Your Name");
+    searchMovies("");
   }, []);
 
   // Function been use to fetch data
@@ -40,8 +40,8 @@ export default function API() {
 
       {movies?.length > 0 ? (
         <div className="container">
-          {movies.map((movie) => (
-            <MovieCard movie={movie} />
+          {movies.map((movie , ID) => (
+            <MovieCard ket={ID} movie={movie} />
           ))}
         </div>
       ) : (
