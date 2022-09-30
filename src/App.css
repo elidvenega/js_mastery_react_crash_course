@@ -2,7 +2,7 @@
 
 :root {
   --font-family: "Lato", sans-serif;
-  --color: #8e44ad;
+  --color: #3d3d3d;
 }
 
 * {
@@ -150,7 +150,7 @@ h1 {
 .movie div:nth-of-type(3) h3 {
   margin-top: 5px;
   font-family: "Roboto Slab", serif;
-  color: #f9d3b4;
+  color: #fff;
 }
 
 .movie:hover div:nth-of-type(2) {
