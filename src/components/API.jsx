@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import MovieCard from "./MovieCard";
+import { MovieCard } from "./MovieCard";
 import SearchIcon from "./search.svg";
 
 // API been used 

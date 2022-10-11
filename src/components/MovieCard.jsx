@@ -1,13 +1,16 @@
 import React from "react";
 
-const MovieCard = ({ movie: {ID, Year, Poster, Title, Type} }) => {
+export const MovieCard = ({ movie: { ID, Year, Poster, Title, Type } }) => {
   return (
     <div className="movie" key={ID}>
       <div>
         <p>{Year}</p>
       </div>
       <div>
-      <img src={Poster !== "N/A" ? Poster : "https://via.placeholder.com/400"} alt={Title} />
+        <img
+          src={Poster !== "N/A" ? Poster : "https://via.placeholder.com/400"}
+          alt={Title}
+        />
       </div>
       <div>
         <span>{Type}</span>
@@ -16,5 +19,3 @@ const MovieCard = ({ movie: {ID, Year, Poster, Title, Type} }) => {
     </div>
   );
 };
-
-export default MovieCard;
