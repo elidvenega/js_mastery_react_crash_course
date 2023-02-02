@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
 :root {
   --background: #0f172a;
   --color: #fff;
-  --font-family: "Roboto", sans-serif;
+  --font-family: "Fira Sans", sans-serif;
 }
 
-* {
+*,
+::before,
+::after {
   margin: 0;
   border: 0;
   padding: 0;
@@ -14,8 +16,11 @@
 }
 
 body {
-  background: var(--background);
+  background: url("../src/assets/images/movie.jpg") no-repeat center
+    center/cover;
+  height: 100%;
   font-family: var(--font-family);
+  width: 100%;
 }
 
 /* For App component */
@@ -28,10 +33,12 @@ body {
 }
 
 h1 {
-  font-size: 3.8rem;
-  letter-spacing: 0.9px;
-  background: var(--color);
+  background: #171717;
   background-clip: text;
+  font-weight: bold;
+  font-size: 4rem;
+  text-transform: capitalize;
+  letter-spacing: 0.9px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
@@ -39,7 +46,7 @@ h1 {
 
 .search {
   background: var(--color);
-  width: 65%;
+  width: 57%;
   margin: 2.1rem 2rem;
   display: flex;
   align-items: center;
@@ -87,6 +94,8 @@ h1 {
 }
 
 .container {
+  /* background: url("../src/assets/images/movie.jpg") no-repeat center
+    center/cover; */
   width: 100%;
   margin-top: 3rem;
   display: flex;
@@ -181,6 +190,11 @@ h1 {
     width: 100%;
   }
 
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
   .search input {
     font-size: 1rem;
   }
@@ -197,7 +211,7 @@ h1 {
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .container {

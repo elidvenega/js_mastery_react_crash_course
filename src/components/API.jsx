@@ -25,7 +25,7 @@ export const API = () => {
   return (
     <>
       <div className="app">
-        <h1>Movie Search</h1>
+        <h1>Search Your favorite movie.</h1>
 
         <div className="search">
           <input
