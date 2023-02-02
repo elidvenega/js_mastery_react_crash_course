@@ -2,7 +2,7 @@
 
 :root {
   --background: #0f172a;
-  --color: #fff;
+  --white-color: #fff;
   --font-family: "Fira Sans", sans-serif;
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 h1 {
-  background: #171717;
+  background: var(--white-color);
   background-clip: text;
   font-weight: bold;
   font-size: 4rem;
@@ -45,7 +45,7 @@ h1 {
 }
 
 .search {
-  background: var(--color);
+  background: var(--white-color);
   width: 57%;
   margin: 2.1rem 2rem;
   display: flex;
@@ -83,19 +83,17 @@ h1 {
 
 .empty h2 {
   font-size: 1.25rem;
-  color: var(--color);
+  color: var(--white-color);
   font-family: var(--font-raleway);
 }
 
 .begin {
   font-size: 1.25rem;
-  color: var(--color);
+  color: var(--white-color);
   font-family: var(--font-raleway);
 }
 
 .container {
-  /* background: url("../src/assets/images/movie.jpg") no-repeat center
-    center/cover; */
   width: 100%;
   margin-top: 3rem;
   display: flex;
@@ -163,7 +161,7 @@ h1 {
 .movie div:nth-of-type(3) h3 {
   margin-top: 5px;
   font-family: "Roboto Slab", serif;
-  color: #fff;
+  color: var(--white-color);
 }
 
 .movie:hover div:nth-of-type(2) {
