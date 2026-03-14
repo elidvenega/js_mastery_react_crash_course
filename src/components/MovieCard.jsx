@@ -1,5 +1,3 @@
-import React from "react";
-
 export const MovieCard = ({ movie: { ID, Year, Poster, Title, Type } }) => {
   return (
     <>

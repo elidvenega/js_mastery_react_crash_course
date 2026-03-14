@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { MovieCard } from "./MovieCard";
 import SearchIcon from "./search.svg";
@@ -11,7 +11,7 @@ export const API = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
-    const movieGenre = "marvel";
+    const movieGenre = "action";
     searchMovies(movieGenre);
   }, []);
 
