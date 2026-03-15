@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-import { MovieCard } from "./MovieCard";
+import MovieCard from "./MovieCard";
 import SearchIcon from "./search.svg";
 
 // API been used
 const API_URL = "https://www.omdbapi.com?apikey=d49d8266";
 
-export const API = () => {
+export default function API() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
 
@@ -56,4 +56,4 @@ export const API = () => {
       </div>
     </>
   );
-};
+}

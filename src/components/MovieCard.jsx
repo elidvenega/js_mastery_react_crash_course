@@ -1,4 +1,6 @@
-export const MovieCard = ({ movie: { ID, Year, Poster, Title, Type } }) => {
+export default function MovieCard({
+  movie: { ID, Year, Poster, Title, Type },
+}) {
   return (
     <>
       <div className="movie" key={ID}>
@@ -18,4 +20,4 @@ export const MovieCard = ({ movie: { ID, Year, Poster, Title, Type } }) => {
       </div>
     </>
   );
-};
+}
