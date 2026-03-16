@@ -17,8 +17,9 @@ export default function API() {
 
   // Function been use to fetch data
   async function searchMovies(title) {
-    const response = await fetch(`${API_URL}&s=${title}`);
-    const data = await response.json();
+    // const response = await fetch(`${API_URL}&s=${title}`);
+    const resp = await fetch(`https://www.omdbapi.com?apikey=d49d8266&s=${title}`)
+    const data = await resp.json();
 
     setMovies(data.Search);
   }
